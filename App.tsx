@@ -55,7 +55,6 @@ const App: React.FC = () => {
                 <h2>Messages</h2>
                 <ul id="messages"></ul> <!-- List to display all messages -->
                 <script>
-                  // Send message to React Native
                   function sendMessageToReactNative() {
                     const message = { type: 'FROM_WEBVIEW', payload: 'Hello From Webview!' };
                     window.ReactNativeWebView.postMessage(JSON.stringify(message));
